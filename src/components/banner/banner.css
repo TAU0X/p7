@@ -1,0 +1,31 @@
+.banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/banner.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  height: 223px;
+  width: 100%;
+  margin: auto;
+  margin-top: 63px;
+}
+.banner p {
+  color: white;
+  font-size: 40px;
+}
+
+.banner_about {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/banner-about.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  height: 223px;
+  width: 100%;
+  margin: auto;
+  margin-top: 63px;
+}/*# sourceMappingURL=banner.css.map */

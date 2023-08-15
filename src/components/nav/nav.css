@@ -1,0 +1,18 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar-link a {
+  color: #ff6060;
+  text-decoration: none;
+  margin-left: 50px;
+  font-size: 25px;
+}
+.navbar-link a:hover {
+  text-decoration: underline;
+}
+.navbar-logo {
+  width: 210px;
+  height: 68px;
+}/*# sourceMappingURL=nav.css.map */

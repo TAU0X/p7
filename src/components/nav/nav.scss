@@ -1,0 +1,40 @@
+@import '../../Styles/variables/variables';
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &-link {
+    a {
+      color: $color-primary;
+      text-decoration: none;
+      margin-left: 50px;
+      font-size: 25px;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+@media screen and (max-width: 750px) {
+  .navbar {
+    margin: 20px 0;
+
+    &-link {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      a {
+        font-size: 15px;
+        margin-left: 10px;
+      }
+    }
+    &-logo {
+      width: 140px;
+      height: 45px;
+      img {
+        width: inherit;
+      }
+    }
+  }
+}

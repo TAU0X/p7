@@ -1,0 +1,18 @@
+.App {
+  text-align: center;
+}
+* {
+  font-family: 'Asap', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+main {
+  margin: 40px 100px;
+  position: relative;
+  min-height: 100vh;
+}
+@media screen and (max-width: 750px) {
+  main {
+    margin: 20px;
+  }
+}

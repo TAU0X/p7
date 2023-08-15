@@ -1,0 +1,108 @@
+@import '../../Styles/variables/variables';
+.logement {
+  &_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: $color-primary;
+    width: 95%;
+    margin: 0 auto;
+    @media screen and (max-width: 650px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 10px;
+    }
+    &_infos {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      font-weight: 500;
+      font-size: 14px;
+
+      button {
+        display: inline;
+        padding: 5px 15px;
+        margin-right: 10px;
+        cursor: pointer;
+        border-radius: 10px;
+        border: none;
+        color: $color-secondary;
+        background-color: $color-primary;
+
+        &:hover {
+          box-shadow: 0 2px 8px rgb(0, 0, 0);
+        }
+      }
+      div {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        @media screen and (max-width: 750px) {
+          flex-wrap: nowrap;
+          padding: 15px 0;
+        }
+      }
+    }
+    &_host {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      @media screen and (max-width: 650px) {
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+      }
+      div {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        gap: 0 10px;
+        @media screen and (max-width: 500px) {
+          gap: 0 5px;
+        }
+      }
+      &_name {
+        align-self: center;
+        flex-direction: column;
+      }
+      img {
+        width: 64px;
+        height: 64px;
+        -o-object-fit: cover;
+        object-fit: cover;
+        -o-object-position: center;
+        object-position: center;
+        border-radius: 50%;
+      }
+      &_stars {
+        display: flex;
+        gap: 10px;
+        img {
+          width: 30px;
+          height: 30px;
+          @media screen and (max-width: 650px) {
+            width: 20px;
+            height: 20px;
+          }
+        }
+      }
+    }
+  }
+  &_collapse {
+    display: flex;
+    @media screen and (max-width: 750px) {
+      flex-wrap: wrap;
+    }
+    &_item {
+      width: 50%;
+      @media screen and (max-width: 750px) {
+        width: 100%;
+      }
+    }
+  }
+}
