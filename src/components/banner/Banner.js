@@ -8,7 +8,7 @@ const Banner = () => {
     if (location.pathname === '/about') {
       setBanner(true);
     }
-
+    return;
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
